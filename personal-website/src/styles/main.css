@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,6 +6,7 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background: #35424a;
     color: #ffffff;
@@ -16,26 +18,133 @@ h1 {
     margin: 0;
 }
 
+/* Navigation */
 nav {
     margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
-    margin: 0 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
 }
 
+nav a.active {
+    background: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Main Container */
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    padding: 20px;
 }
 
+/* Buttons */
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode nav a {
+    color: #ffffff;
+}
+
+body.dark-mode nav a.active {
+    background: #1e90ff;
+}
+
+body.dark-mode footer {
+    background: #222;
+}
+
+body.dark-mode button {
+    background-color: #1e90ff;
+}
+
+body.dark-mode button:hover {
+    background-color: #0056b3;
+}
+
+/* Forms */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    width: 100%;
+}
+
+/* Dark Mode for Forms */
+body.dark-mode form {
+    background: #1c1c1c;
+    color: #ffffff;
+}
+
+body.dark-mode form input,
+body.dark-mode form textarea {
+    background: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+/* Footer */
 footer {
     background: #35424a;
     color: #ffffff;
