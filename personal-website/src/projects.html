@@ -9,13 +9,14 @@
 </head>
 <body>
     <header>
+        <h1>Luke Barker</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="accomplishments.html">Accomplishments</a></li>
-                <li><a href="contacts.html">Contact</a></li>
+                <li><button><a href="index.html" class="active">Home</a></button></li>
+                <li><button><a href="about.html">About</a></button></li>
+                <li><button><a href="projects.html">Projects</a></button></li>
+                <li><button><a href="accomplishments.html">Accomplishments</a></button></li>
+                <li><button><a href="contacts.html">Contact</a></button></li>
             </ul>
         </nav>
     </header>
@@ -24,12 +25,26 @@
         <section class="projects-container">
             <h1>My Projects</h1>
             <p>Here are some of the projects I've worked on:</p>
-            <ul>
-                <li><strong>Project 1:</strong> Description of project 1.</li>
-                <li><strong>Project 2:</strong> Description of project 2.</li>
-                <li><strong>Project 3:</strong> Description of project 3.</li>
+            <ul class="projects-list">
+                <li>
+                    <div class="project-card">
+                        <h3>Hoop Hype</h3>
+                        <p>Project that is aimed at exposing media bias in the NBA by performing sentiment analysis on NBA related articles.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-card">
+                        <h3>Project 2</h3>
+                        <p>Description of project 2.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-card">
+                        <h3>Project 3</h3>
+                        <p>Description of project 3.</p>
+                    </div>
+                </li>
             </ul>
-            <button id="themeToggle">Toggle Theme</button>
         </section>
     </main>
 
