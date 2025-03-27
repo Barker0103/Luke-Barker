@@ -114,3 +114,92 @@ h2 a:hover {
     height: auto;
     margin-top: 10px;
 }
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Carousel Items */
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    width: 60%;
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Show Active Section */
+.carousel-item.active {
+    opacity: 1;
+}
+
+/* About Container */
+.about-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+.skills-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.skills-list li {
+    background: #ffcc00;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Fun Facts Section */
+.fun-facts-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fun-facts-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fun-facts-list li {
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}

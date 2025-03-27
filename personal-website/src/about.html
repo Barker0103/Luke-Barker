@@ -6,7 +6,7 @@
     <title>About Me</title>
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Lora&display=swap" rel="stylesheet">
-    <script defer src="main.js"></script>
+    <script defer src="scripts/main.js"></script>
 </head>
 <body>
     <header>
@@ -22,12 +22,33 @@
         </nav>
     </header>
 
-    <main>
-        <section class="about-container">
-            <h2><a href="about.html">About Me</a></h2>
-            <p>Welcome to my blog! I'm passionate about web development, data science, and all things tech.
-               This blog is where I share my projects, thoughts, and tutorials on various topics.</p>
-            <p>My name is Luke Barker and I am a Senior at Allegheny College. I play on the Men's Basketball team and I am a Computer Science Major and Economics Minor.
+    <main class="carousel-container">
+        <section class="carousel-item active">
+            <h2>About Me</h2>
+            <p>Welcome to my blog! I'm passionate about web development, data science, and all things tech.</p>
+            <p>My name is Luke Barker, and I am a Senior at Allegheny College. I play on the Men's Basketball team and I am a Computer Science Major and Economics Minor.</p>
+        </section>
+
+        <section class="carousel-item">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Python (NumPy, PyTorch, Pandas)</li>
+                <li>JavaScript (React, 11ty)</li>
+                <li>HTML & CSS</li>
+                <li>Data Science & Machine Learning</li>
+                <li>Web Development</li>
+                <li>Sentiment Analysis</li>
+            </ul>
+        </section>
+
+        <section class="carousel-item">
+            <h2>Fun Facts & Hobbies</h2>
+            <ul class="fun-facts-list">
+                <li>I'm a huge NBA fan and analyze basketball stats for fun.</li>
+                <li>I balance being a college athlete with my passion for coding.</li>
+                <li>I love solving coding challenges and experimenting with AI models.</li>
+                <li>Outside of tech and basketball, I enjoy hiking and watching movies.</li>
+            </ul>
         </section>
     </main>
 
