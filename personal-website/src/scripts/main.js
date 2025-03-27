@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
         items[currentIndex].classList.add("active");
     }
 
-    // Auto-change every 3 seconds
-    setInterval(showNextItem, 3000);
+    // Auto-change every 5 seconds
+    setInterval(showNextItem, 5000);
 });
 
 
