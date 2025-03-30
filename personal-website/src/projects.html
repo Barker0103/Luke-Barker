@@ -24,26 +24,24 @@
 
     <main>
         <section class="projects-container">
-            <h2><a href="projects.html">My Projects</a></h2>
+            <h2>My Projects</h2>
             <p>Here are some of the projects I've worked on:</p>
+
+            <!-- Search Filter -->
+            <input type="text" id="searchProjects" placeholder="Search Projects..." onkeyup="filterProjects()">
+
             <ul class="projects-list">
-                <li>
-                    <div class="project-card">
-                        <h3>Hoop Hype</h3>
-                        <p>Project that is aimed at exposing media bias in the NBA by performing sentiment analysis on NBA related articles.</p>
-                    </div>
+                <li class="project-card" data-name="Hoop Hype">
+                    <h3>Hoop Hype</h3>
+                    <p>A project aimed at exposing media bias in the NBA by performing sentiment analysis on related articles.</p>
                 </li>
-                <li>
-                    <div class="project-card">
-                        <h3>Ascend</h3>
-                        <p>A we project that involved front end and backend work. Worked for FTAC(Food Truck Association of Canada) to create a website/tool that they could deploy and allow their members to use.</p>
-                    </div>
+                <li class="project-card" data-name="Ascend">
+                    <h3>Ascend</h3>
+                    <p>A web project for the Food Truck Association of Canada (FTAC) that involved frontend and backend development.</p>
                 </li>
-                <li>
-                    <div class="project-card">
-                        <h3>TruthGuard</h3>
-                        <p>Developed a Fact-Checking Dashboard, using Streamlit, to evaluate the accuracy of user-inputted text by comparing it with a corpus of articles stored in XML format</p>
-                    </div>
+                <li class="project-card" data-name="TruthGuard">
+                    <h3>TruthGuard</h3>
+                    <p>Developed a Fact-Checking Dashboard using Streamlit to evaluate the accuracy of user-inputted text.</p>
                 </li>
             </ul>
         </section>

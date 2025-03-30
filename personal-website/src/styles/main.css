@@ -165,44 +165,86 @@ h2 a:hover {
     opacity: 1;
 }
 
-/* Optional adjustments for better visual balance */
+.profile-image {
+    width: 100%; /* Makes the image responsive */
+    max-width: 250px; /* Limit the image size to 250px */
+    height: auto; /* Keep the aspect ratio intact */
+    border-radius: 10px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a slight shadow */
+    object-fit: contain; /* Ensures the image doesn't distort or overflow */
+    margin: 0 auto; /* Centers the image within the carousel item */
+}
+
+/* Skills List Styling */
 .skills-list {
-    list-style-type: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .skills-list li {
-    background: #ffcc00;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: 600;
-    color: #222;
-}
-
-/* Fun Facts Section */
-.fun-facts-container {
-    max-width: 800px;
-    margin: 20px auto;
+    list-style: none;
+    background: #f8f9fa;
     padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 40px); /* Ensures three items per row */
+    min-width: 200px;
+    flex-grow: 1;
 }
 
+/* Fun Facts List Styling */
 .fun-facts-list {
-    list-style-type: none;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .fun-facts-list li {
+    list-style: none;
     background: #e0e0e0;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px 0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 40px);
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+@media (max-width: 1024px) {
+    .skills-list li,
+    .fun-facts-list li {
+        width: calc(50% - 20px); /* Two per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-list,
+    .fun-facts-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-list li,
+    .fun-facts-list li {
+        width: 80%; /* Single column layout for smaller screens */
+    }
 }
 
 
@@ -270,3 +312,118 @@ h2 a:hover {
     opacity: 0.8;
 }
 
+/* Accomplishments Container */
+.accomplishments-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto; /* Centering the whole section */
+    padding: 40px;
+    text-align: center;
+}
+
+/* Title Styling */
+.accomplishments-container h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+/* Description Paragraph */
+.accomplishments-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+
+/* Accomplishments List */
+/* List of Accomplishments */
+.accomplishments-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Keep list left-aligned for readability */
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Individual Accomplishment Items */
+.accomplishments-container ul li {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accomplishments-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accomplishments-list li {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.accomplishments-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Projects Section */
+.projects-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Project Cards */
+.projects-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: #fff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Search Bar */
+#searchProjects {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
