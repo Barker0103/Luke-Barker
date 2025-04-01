@@ -397,7 +397,6 @@ h2 a:hover {
 }
 
 .projects-container h2 {
-    font-family: 'Lora', serif;
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -427,7 +426,6 @@ h2 a:hover {
 }
 
 .project-card h3 {
-    font-family: 'Lora', serif;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
